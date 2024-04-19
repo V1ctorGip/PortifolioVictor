@@ -4,7 +4,6 @@ import myImg from "../../Assets/avatar.svg";
 import Tilt from "react-parallax-tilt";
 import {
   AiFillGithub,
-  AiOutlineTwitter,
   AiFillInstagram,
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
@@ -19,21 +18,24 @@ function Home2() {
               DEIXE-ME<span className="purple"> APRESENTAR </span> A VOCÊ
             </h1>
             <p className="home-about-body">
-              Sempre fui apaixonado por tecnologia e a programação em si, a partir disso acredito ter aprendido algo nessa área.
+              Minha trajetória profissional é marcada por uma profunda paixão pela tecnologia e pela programação.
               <br />
-              <br />Eterno estudante de alguns clássicos, como:
+              <br />Utilizo e estudo um conjunto de tecnologias amplamente reconhecidas e adotadas na indústria atualmente, incluindo 
               <i>
-                <b className="purple"> Python, Javascript, Django, Bootstrap e React. </b>
+                <b className="purple"> Python, Javascript, Django, Bootstrap, React e React native.  </b>
               </i>
               <br />
               <br />
-              Sou mais adepto à parte de Frontend, com desenvolvimento de projetos e designs UX/UI desde&nbsp;
+              Sou mais focado na parte de Frontend, com desenvolvimento de projetos e designs ligados a experiência e usabilidade do usuário desde&nbsp;
               <i>
-                <b className="purple">Websites a aplicativos mobile </b> 
+                <b className="purple"> Websites </b> a
+              </i>
+              <i>
+                <b className="purple"> Aplicativos mobile </b>
               </i>
               <br />
               <br />
-              Sempre que possível trabalho com linguagens e frameworks muito utilizados no âmbito de desenvolvimento, como <b className="purple">Django</b> e
+              Trabalho com linguagens e frameworks muito utilizados no âmbito de desenvolvimento, como <b className="purple">Django</b> e
               <i>
                 <b className="purple">
                   {" "}

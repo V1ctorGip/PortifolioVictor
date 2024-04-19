@@ -1,30 +1,48 @@
-import React from "react";
-import { Col, Row } from "react-bootstrap";
+import React from 'react';
+import { Col, Row, Tooltip, OverlayTrigger } from 'react-bootstrap';
 import {
-  SiVisualstudiocode,
-  SiPostman,
-  SiSlack,
-  SiVercel,
-  SiMacos,
-} from "react-icons/si";
+  SiBootstrap,
+  SiNextdotjs,
+  SiTailwindcss,
+  SiTypescript,
+} from 'react-icons/si';
 
 function Toolstack() {
+  const renderTooltip = (name) => (
+    <Tooltip id={`tooltip-${name}`}>
+      {name}
+    </Tooltip>
+  );
+
   return (
-    <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
+    <Row style={{ justifyContent: 'center', paddingBottom: '50px' }}>
       <Col xs={4} md={2} className="tech-icons">
-        <SiMacos />
+        <OverlayTrigger
+          placement="top"
+          overlay={renderTooltip('Bootstrap')}>
+          <div><SiBootstrap /></div>
+        </OverlayTrigger>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiVisualstudiocode />
+        <OverlayTrigger
+          placement="top"
+          overlay={renderTooltip('Next.js')}>
+          <div><SiNextdotjs /></div>
+        </OverlayTrigger>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiPostman />
+        <OverlayTrigger
+          placement="top"
+          overlay={renderTooltip('Tailwind CSS')}>
+          <div><SiTailwindcss /></div>
+        </OverlayTrigger>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiSlack />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiVercel />
+        <OverlayTrigger
+          placement="top"
+          overlay={renderTooltip('TypeScript')}>
+          <div><SiTypescript /></div>
+        </OverlayTrigger>
       </Col>
     </Row>
   );
