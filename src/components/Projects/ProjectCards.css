@@ -1,0 +1,9 @@
+.project-card-view .card-body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  
+  .project-card-view .card-body > div:last-child {
+    margin-top: auto;
+  }
