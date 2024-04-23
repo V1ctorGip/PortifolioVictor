@@ -33,11 +33,13 @@ function Home() {
 
             <Col md={5} style={{ paddingBottom: 20 }}>
               <Tilt>
+                {/* Imagem com lazy loading nativo */}
                 <img
                   src={homeLogo}
                   alt="home pic"
                   className="img-fluid"
                   style={{ maxHeight: "450px" }}
+                  loading="lazy"
                 />
               </Tilt>
             </Col>

@@ -31,11 +31,12 @@ function About() {
             style={{ paddingTop: "120px", paddingBottom: "50px" }}
             className="about-img"
           >
-            <img src={laptopImg} alt="about" className="img-fluid" />
+            {/* Imagem agora com lazy loading nativo */}
+            <img src={laptopImg} alt="about" className="img-fluid" loading="lazy" />
           </Col>
         </Row>
         <h1 className="project-heading">
-        <strong className="purple">Skills </strong>  Profissionais
+          <strong className="purple">Skills </strong>  Profissionais
         </h1>
 
         <Techstack />

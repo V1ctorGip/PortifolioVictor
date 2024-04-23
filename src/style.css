@@ -402,12 +402,28 @@ button:focus {
 /* --------- */
 /* Footer */
 /* --------- */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Usando 100vh para garantir que preenche toda a altura da tela */
+}
+
+.content {
+  flex: 1; /* Ocupa todo o espaço disponível */
+}
+
+/* Atualização do seu CSS para o footer */
 .footer {
   background-color: rgb(10, 4, 22);
-  bottom: 0 !important;
   padding-top: 10px !important;
-  padding-bottom: 8px !important ;
+  padding-bottom: 8px !important;
 }
+
 .footer-copywright {
   text-align: center !important;
 }
@@ -418,10 +434,7 @@ button:focus {
 }
 
 @media (max-width: 767px) {
-  .footer-copywright {
-    text-align: center !important;
-  }
-
+  .footer-copywright,
   .footer-body {
     text-align: center !important;
   }
@@ -433,6 +446,7 @@ button:focus {
   margin-top: 0.5em !important;
   margin-bottom: 0.5em !important;
 }
+
 .footer-icons {
   margin-top: 0.5em !important;
   margin-bottom: 0.5em !important;
