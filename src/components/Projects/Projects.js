@@ -8,6 +8,7 @@ import Erecycle from "../../Assets/Projects/Erecycle.png";
 import Clube from "../../Assets/Projects/Clube.png";
 import Gecom from "../../Assets/Projects/Gecom.jpeg";
 import CardVex from "../../Assets/Projects/CardVex.jpeg";
+import Facialponto from "../../Assets/Projects/Facialponto.png";
 function Projects() {
   return (
     <Container fluid className="project-section">
@@ -77,6 +78,15 @@ function Projects() {
               ghLink="https://github.com/V1ctorGip/CardVex"
               title="CardVex"
               description="CardVex é um sistema de gestão de atividades totalmente versátil, trazendo açõe idênticas ao sistema Trello, além disso, mostrando em resumo as tasks do kanban em formato de dashboard. Sendo possível criar cards e movê-los dentro das listas."
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={Facialponto}
+              isBlog={false}
+              ghLink="https://github.com/V1ctorGip/Web-ponto"
+              title="Facial Ponto"
+              description="Facial ponto é um sistema de reconhecimento facial, realizado com o intuíto de substituir o sistema de web-ponto, que hoje atual como sistema de registro de ponto através das digitais."
             />
           </Col>
         </Row>
