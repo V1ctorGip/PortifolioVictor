@@ -66,6 +66,7 @@ function Projects() {
               imgPath={Gecom}
               isBlog={false}
               title="Gecom"
+              ghLink="https://github.com/V1ctorGip/GECOM"
               description="Gecom é um sistema analítico baseado nos servidores cujo o cargo é comissionado. Para administradores, é possível prover um servidor em determinado órgão ou em algum cargo vago."
             />
           </Col>
@@ -73,6 +74,7 @@ function Projects() {
             <ProjectCard
               imgPath={CardVex}
               isBlog={false}
+              ghLink="https://github.com/V1ctorGip/CardVex"
               title="CardVex"
               description="CardVex é um sistema de gestão de atividades totalmente versátil, trazendo açõe idênticas ao sistema Trello, além disso, mostrando em resumo as tasks do kanban em formato de dashboard. Sendo possível criar cards e movê-los dentro das listas."
             />
